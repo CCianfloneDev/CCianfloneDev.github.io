@@ -1,0 +1,269 @@
+@media(min-width: 768px)
+{
+	nav ul
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	nav ul li
+	{
+		border: none;
+	}
+	header h1
+	{
+		font-size: 70px;
+	}
+	#body-header-content p
+	{
+		position: relative;
+		text-align: center;
+	}
+	#inner-header-content p
+	{
+		position: relative;
+		text-align: center;
+	}
+	#social_content p
+	{
+		position: relative;
+		text-align: center;
+	}
+	.show-on-large
+	{
+		display: block !important;
+	}
+	.show-on-large img
+	{
+		padding-left: 30px;
+		max-height: 90%;
+		max-width: 90%;
+	}
+}
+
+header
+{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: -50px;
+	border: solid white 2px;
+	border-radius: 20px;
+	background-color: #48566C;
+	display: flex;
+	justify-content: center;
+	background: rgb(89,106,91);
+	background: radial-gradient(circle, rgba(89,106,91,1) 
+									0%, rgba(77,88,98,1) 
+									99%, rgba(71,68,68,1) 100%);
+}
+
+header h1
+{
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+}
+
+body
+{
+	background-color: #656C76;
+}
+
+nav
+{
+	margin-top: 20px;
+	width: 100%;
+	background-color: #A5AFBD;
+	border: 2px white solid;
+	background: rgb(89,106,91);
+	background: radial-gradient(circle, rgba(89,106,91,1) 
+									0%, rgba(77,88,98,1) 
+									99%, rgba(71,68,68,1) 100%);
+	border-radius: 10px;
+}
+
+nav ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+	border-style: solid white 2px;
+}
+
+nav ul li
+{
+	flex: 1;
+	padding: 10px;
+	border: solid white 1px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav ul li:hover, nav ul li a:focus
+{
+	background-color: #939AA4;
+}
+
+li a 
+{
+  /* This flexbox code stretches the link's clickable 
+   * area to fit its parent block. */
+   display: flex; 
+   flex-grow: 1; 
+   flex-shrink: 1; 
+   justify-content: center;
+}
+
+#body-header-content p
+{
+	position: relative;
+	word-break: break-all;
+	color: white;
+}
+#inner-header-content p
+{
+	position: relative;
+	word-break: break-all;
+	color: black;
+	font-size: 20px;
+}
+
+#body-header-content
+{
+	width: 90%;
+	margin: 10px auto;
+	padding: 5px;
+	background-color: #A5AFBD;
+	border: 3px solid white;
+	border-radius: 15px;
+	font-family: 'Raleway', sans-serif;
+	background: rgb(89,106,91);
+	background: radial-gradient(circle, rgba(89,106,91,1) 
+									0%, rgba(77,88,98,1) 
+									99%, rgba(71,68,68,1) 100%);
+}
+
+#inner-header-content
+{
+	width: 60%;
+	margin: 10px auto;
+	padding: 5px;
+	background-color: whitesmoke;
+	border: 3px solid white;
+	border-radius: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#body-header-content h2
+{
+	font-size: 24px;
+	color: white;
+	text-shadow: 1px 1px 2px #A5AFBD;
+	text-align: center;
+}
+
+#linkedin-badge
+{
+   display: flex; 
+   flex-grow: 1; 
+   flex-shrink: 1; 
+   justify-content: center;
+}
+
+/*CSS SEPERATE FOR PROJECTS PAGE*/
+#project-title
+{
+	text-align: center;
+	background-color: grey;
+	padding: 5px;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-radius: 10px;
+}
+#project-title a
+{
+	display: flex; 
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    justify-content: center;
+	color: white;
+	text-decoration: none;
+}
+
+#project-title:hover
+{
+	background-color: #939AA4;
+}
+
+/* These two media queries change the photo that is displayed for zoo keeping system*/
+@media screen and (max-width: 768px)
+{
+	.show-on-large
+	{
+		display: none !important;
+	}
+	.show-on-small
+	{
+		display: block !important;
+	}
+	.start-menu
+	{
+		max-width: 100%;
+	}
+	.animal-menu2
+	{
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 768px)
+{
+	.show-on-large
+	{
+		display: block !important;
+	}
+	.show-on-small
+	{
+		display: none !important;
+	}
+}
+
+
+/*CSS SEPERATE FOR SOCIAL MEDIA PAGE*/
+#social_content
+{
+	width: 90%;
+	margin: 10px auto;
+	padding: 5px;
+	background-color: #A5AFBD;
+	border: 3px solid white;
+	border-radius: 15px;
+	font-family: 'Raleway', sans-serif;
+	background: rgb(89,106,91);
+	background: radial-gradient(circle, rgba(89,106,91,1) 
+									0%, rgba(77,88,98,1) 
+									99%, rgba(71,68,68,1) 100%);
+}
+
+#social_content h4
+{
+	font-size: 24px;
+	color: white;
+	text-shadow: 1px 1px 2px #A5AFBD;
+	text-align: center;
+}
+
+#social_content p
+{
+	position: relative;
+	word-break: break-all;
+	color: white;
+}
