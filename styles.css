@@ -1,3 +1,4 @@
+/*Media query for screens bigger than 768 pixels*/
 @media(min-width: 768px)
 {
 	nav ul
@@ -39,8 +40,13 @@
 		max-height: 90%;
 		max-width: 90%;
 	}
+	#single-image-projects
+	{
+		max-width: 80%;
+	}
 }
 
+/*Draws title section of pages*/
 header
 {
 	margin-left: 20%;
@@ -51,12 +57,12 @@ header
 	background-color: #48566C;
 	display: flex;
 	justify-content: center;
+	/*Gradient effect*/
 	background: rgb(89,106,91);
-	background: radial-gradient(circle, rgba(89,106,91,1) 
-									0%, rgba(77,88,98,1) 
-									99%, rgba(71,68,68,1) 100%);
+	background: radial-gradient(circle, rgba(89,106,91,1) 0%, rgba(77,88,98,1) 99%, rgba(71,68,68,1) 100%);
 }
 
+/*Stying for header text in title section of pages*/
 header h1
 {
 	text-align: center;
@@ -65,24 +71,26 @@ header h1
 	font-size: 50px;
 }
 
+/*Background color of pages*/
 body
 {
 	background-color: #656C76;
 }
 
+/*Drawing navigation menu*/
 nav
 {
 	margin-top: 20px;
 	width: 100%;
 	background-color: #A5AFBD;
 	border: 2px white solid;
-	background: rgb(89,106,91);
-	background: radial-gradient(circle, rgba(89,106,91,1) 
-									0%, rgba(77,88,98,1) 
-									99%, rgba(71,68,68,1) 100%);
 	border-radius: 10px;
+	/*Gradient effect*/
+	background: rgb(89,106,91);
+	background: radial-gradient(circle, rgba(89,106,91,1) 0%, rgba(77,88,98,1) 99%, rgba(71,68,68,1) 100%);
 }
 
+/*Formatting the un-ordered list inside the navigation menu*/
 nav ul
 {
 	padding: 0px;
@@ -93,6 +101,7 @@ nav ul
 	border-style: solid white 2px;
 }
 
+/*Sepearting the list items (menu options in nav bar)*/
 nav ul li
 {
 	flex: 1;
@@ -100,43 +109,29 @@ nav ul li
 	border: solid white 1px;
 }
 
+/*Styling list items (menu options in nav bar)*/
 nav ul li a
 {
+    /*This code stretches the link's clickable area to fit its parent block.*/
+    display: flex; 
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    justify-content: center;
+
+    /*Styling text of list items*/
 	text-decoration: none;
 	font-size: 24px;
 	color: white;
 	font-family: 'Raleway', sans-serif;
 }
 
-nav ul li:hover, nav ul li a:focus
+/*Effect that highlights list items (menu options in nav bar)*/
+nav ul li:hover
 {
 	background-color: #939AA4;
 }
 
-li a 
-{
-  /* This flexbox code stretches the link's clickable 
-   * area to fit its parent block. */
-   display: flex; 
-   flex-grow: 1; 
-   flex-shrink: 1; 
-   justify-content: center;
-}
-
-#body-header-content p
-{
-	position: relative;
-	word-break: break-all;
-	color: white;
-}
-#inner-header-content p
-{
-	position: relative;
-	word-break: break-all;
-	color: black;
-	font-size: 20px;
-}
-
+/*Drawing page header*/
 #body-header-content
 {
 	width: 90%;
@@ -146,12 +141,29 @@ li a
 	border: 3px solid white;
 	border-radius: 15px;
 	font-family: 'Raleway', sans-serif;
+	/*Gradient effect*/
 	background: rgb(89,106,91);
-	background: radial-gradient(circle, rgba(89,106,91,1) 
-									0%, rgba(77,88,98,1) 
-									99%, rgba(71,68,68,1) 100%);
+	background: radial-gradient(circle, rgba(89,106,91,1) 0%, rgba(77,88,98,1) 99%, rgba(71,68,68,1) 100%);
 }
 
+/*Styling header above body of page(s)*/
+#body-header-content h2
+{
+	font-size: 24px;
+	color: white;
+	text-shadow: 1px 1px 2px #A5AFBD;
+	text-align: center;
+}
+
+/*Styling text above body of page*/
+#body-header-content p
+{
+	position: relative;
+	word-break: break-all;
+	color: white;
+}
+
+/*Drawing page body (white section with content)*/
 #inner-header-content
 {
 	width: 60%;
@@ -163,24 +175,50 @@ li a
 	font-family: 'Raleway', sans-serif;
 }
 
-#body-header-content h2
+/*Altering text within white body section of page(s)*/
+#inner-header-content p
 {
-	font-size: 24px;
-	color: white;
-	text-shadow: 1px 1px 2px #A5AFBD;
+	position: relative;
+	word-wrap: break-word;
+	color: black;
+	font-size: 20px;
+}
+
+/*Drawing footer*/
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 	text-align: center;
+	color: white;
+	border: 1px solid white;
+	border-radius: 10px;
+	/*Gradient effect*/
+	background: rgb(89,106,91);
+	background: radial-gradient(circle, rgba(89,106,91,1) 0%, rgba(77,88,98,1) 99%, rgba(71,68,68,1) 100%);
+	font-size: 15px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
 }
 
-#linkedin-badge
+
+/***********CSS SEPERATE FOR CONTACT PAGE BELOW***********/
+
+/*Formatting social media links for contact page*/
+.badges
 {
-   display: flex; 
-   flex-grow: 1; 
-   flex-shrink: 1; 
-   justify-content: center;
+	padding-top: 15px;
+	display: flex;
+	justify-content: center;
 }
 
-/*CSS SEPERATE FOR PROJECTS PAGE*/
-#project-title
+
+/***********CSS SEPERATE FOR PROJECTS PAGE BELOW***********/
+
+/*Shapes github-repo link*/
+.project-title
 {
 	text-align: center;
 	background-color: grey;
@@ -189,7 +227,9 @@ li a
 	margin-right: 25%;
 	border-radius: 10px;
 }
-#project-title a
+
+/*stretching link to make parent clickable for github-repo link*/
+.project-title a
 {
 	display: flex; 
     flex-grow: 1; 
@@ -199,9 +239,20 @@ li a
 	text-decoration: none;
 }
 
-#project-title:hover
+/*Hover effect for github-repo link*/
+.project-title:hover
 {
 	background-color: #939AA4;
+}
+
+/*Alters the images on the projects page except the zooKeeping images*/
+#single-image-projects
+{
+	max-width: 100%;
+	padding-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* These two media queries change the photo that is displayed for zoo keeping system*/
@@ -236,34 +287,28 @@ li a
 	}
 }
 
-
-/*CSS SEPERATE FOR SOCIAL MEDIA PAGE*/
-#social_content
+/*Draws a line*/
+.line
 {
-	width: 90%;
-	margin: 10px auto;
-	padding: 5px;
-	background-color: #A5AFBD;
-	border: 3px solid white;
-	border-radius: 15px;
-	font-family: 'Raleway', sans-serif;
-	background: rgb(89,106,91);
-	background: radial-gradient(circle, rgba(89,106,91,1) 
-									0%, rgba(77,88,98,1) 
-									99%, rgba(71,68,68,1) 100%);
+	max-width: 100%;
+	height: 47px;
+	border-bottom: 1px solid black;
 }
 
-#social_content h4
+/*Draws the line used in the contact page*/
+.line-contact
 {
-	font-size: 24px;
-	color: white;
-	text-shadow: 1px 1px 2px #A5AFBD;
-	text-align: center;
+	max-width: 100%;
+	height: 15px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
 }
 
-#social_content p
+/*Positioning for construction photo*/
+#wip-picture
 {
-	position: relative;
-	word-break: break-all;
-	color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
