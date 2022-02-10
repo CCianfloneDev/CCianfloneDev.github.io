@@ -101,7 +101,7 @@ nav ul
 	border-style: solid white 2px;
 }
 
-/*Sepearting the list items (menu options in nav bar)*/
+/*Separating the list items (menu options in nav bar)*/
 nav ul li
 {
 	flex: 1;
@@ -203,6 +203,31 @@ footer
 	font-family: 'Raleway', sans-serif;
 }
 
+/***********CSS SEPERATE FOR ABOUT PAGE BELOW***********/
+
+.resume
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	border-radius: 12px;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	color: white;
+	text-decoration: none;
+	font-size: 150%;
+}
+.resume:hover
+{
+	text-shadow: 1px 1px black;
+	font-size: 160%;
+	
+}
+.resume:active
+{
+	color: green;
+}
 
 /***********CSS SEPERATE FOR CONTACT PAGE BELOW***********/
 
