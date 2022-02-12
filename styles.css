@@ -184,6 +184,18 @@ nav ul li:hover
 	font-size: 20px;
 }
 
+/*Syling cover photo on homepage*/
+#coverphoto
+{
+  	display: block;
+  	margin-top: 20px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 30%;
+  	border-radius: 100px;
+  	border-style: solid;
+}
+
 /*Drawing footer*/
 footer
 {
