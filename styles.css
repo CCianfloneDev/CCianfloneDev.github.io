@@ -205,6 +205,13 @@ footer
 
 /***********CSS SEPERATE FOR ABOUT PAGE BELOW***********/
 
+.aboutme-list li
+{
+	display: flex;
+	padding-left: 20px;
+	font-size: 	1em;
+}
+
 .resume
 {
 	margin-left: auto;
