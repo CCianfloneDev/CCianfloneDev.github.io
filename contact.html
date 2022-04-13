@@ -6,6 +6,7 @@
       <title>Cole Cianflone's Portfolio</title>
       <link rel="stylesheet" type="text/css" href="styles.css"/>
       <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+      <script src="js/FormValidation.js"></script>
    </head>
    <body>
       <header>
@@ -34,7 +35,35 @@
                </div>
                <!-- Line break -->	
                <div class="line-contact"></div>
-               <br>
+               <div id="formContainer">
+                  <form id="contactForm" action="contact.html"
+                     name="EmailForm">
+                     <fieldset id="contactInfo">
+                        <div id="formList">
+                           <!--FullName-->      
+                           <label for="fullname">Full Name</label>
+                           <input class="fields" id="fullname" name="fullname" type="text" />
+                           <p class="error" id="fullname_error">* Required field</p>
+                           <!--PhoneNumber-->                     
+                           <label for="phoneNumber">Phone Number:</label>
+                           <input class="fields" type="tel" id="phoneNumber" name="phoneNumber" />
+                           <p class="error" id="phoneNumber_error">* Required field</p>
+                           <p class="error" id="phoneNumberformat_error">* Invalid phone number</p>
+                           <!--Email-->                   
+                           <label for="email">Email</label>
+                           <input class="fields" id="email" name="email" type="text" />
+                           <p class="error" id="email_error">* Required field</p>
+                           <p class="error" id="emailformat_error">* Invalid email address</p>
+                           <!--Subject-->                      
+                           <label for="subject">Subject</label>
+                           <textarea class="fields" id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+                        </div>
+                        <!--Submit and clear buttons--> 
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="reset" id="reset">Reset Form</button>
+                     </fieldset>
+                  </form>
+               </div>
                <p>Feel free to connect with me on LinkedIn and follow my GitHub!</p>
                <p>Email: colecianflone123@gmail.com</p>
                <p>Phone: 204-998-3787</p>
