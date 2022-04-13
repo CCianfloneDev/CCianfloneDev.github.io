@@ -263,6 +263,62 @@ footer {
 }
 
 
+/*Hiding form errors at start*/
+
+.error {
+	font-style: italic;
+	display: none;
+}
+
+
+/*styling list*/
+
+#formList {
+	list-style: none;
+}
+
+
+/*styling buttons*/
+
+#submit,
+#reset {
+	margin: 0;
+	background-color: #86998A;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#submit:hover,
+#reset:hover {
+	background-color: #45a049;
+}
+
+
+/*styling fields of form*/
+
+.fields {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
+}
+
+
+/*styling form*/
+
+#formContainer {
+	position: relative;
+	padding: 20px;
+}
+
+
 /***********CSS SEPERATE FOR PROJECTS PAGE BELOW***********/
 
 
