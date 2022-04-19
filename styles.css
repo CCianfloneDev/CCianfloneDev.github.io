@@ -326,17 +326,26 @@ footer {
 
 .project-title {
 	text-align: center;
-	background-color: grey;
+	background: rgb(89, 106, 91);
 	padding: 5px;
 	margin-left: 25%;
 	margin-right: 25%;
 	border-radius: 10px;
 }
 
+.playgame-button{
+	text-align: center;
+	background: rgb(89, 106, 91);
+	padding: 5px;
+	margin-left: 35%;
+	margin-right: 35%;
+	border-radius: 10px;
+}
+
 
 /*stretching link to make parent clickable for github-repo link*/
 
-.project-title a {
+.project-title a, .playgame-button a {
 	display: flex;
 	flex-grow: 1;
 	flex-shrink: 1;
@@ -348,7 +357,7 @@ footer {
 
 /*Hover effect for github-repo link*/
 
-.project-title:hover {
+.project-title:hover, .playgame-button:hover {
 	background-color: #939AA4;
 }
 
