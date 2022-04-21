@@ -202,23 +202,21 @@ nav ul li:hover {
 
 /*Drawing footer*/
 
-footer {
+.footer {
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	text-align: center;
-	color: white;
-	border: 1px solid white;
-	border-radius: 10px;
-	/*Gradient effect*/
 	background: rgb(89, 106, 91);
-	background: radial-gradient(circle, rgba(89, 106, 91, 1) 0%, rgba(77, 88, 98, 1) 99%, rgba(71, 68, 68, 1) 100%);
-	font-size: 15px;
 	color: white;
+	text-align: center;
 	font-family: 'Raleway', sans-serif;
-}
+ }
 
+ .footer a{
+	text-decoration: none;
+	color: lightgreen;
+ }
 
 /***********CSS SEPERATE FOR ABOUT PAGE BELOW***********/
 
