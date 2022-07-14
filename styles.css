@@ -160,8 +160,8 @@ nav ul li:hover {
 
 #body-header-content p {
 	position: relative;
-	word-break: break-all;
 	color: white;
+	text-align: center;
 }
 
 
@@ -182,7 +182,6 @@ nav ul li:hover {
 
 #inner-header-content p {
 	position: relative;
-	word-wrap: break-word;
 	color: black;
 	font-size: 20px;
 }
@@ -432,4 +431,9 @@ nav ul li:hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: 30%;
+}
+
+/*applys word break to all paragraphs*/
+p {
+	word-break: normal;
 }
