@@ -6,32 +6,40 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 	}
+
 	nav ul li {
 		border: none;
 	}
+
 	header h1 {
 		font-size: 70px;
 	}
+
 	#body-header-content p {
 		position: relative;
 		text-align: center;
 	}
+
 	#inner-header-content p {
 		position: relative;
 		text-align: center;
 	}
+
 	#social_content p {
 		position: relative;
 		text-align: center;
 	}
+
 	.show-on-large {
 		display: block !important;
 	}
+
 	.show-on-large img {
 		padding-left: 30px;
 		max-height: 90%;
 		max-width: 90%;
 	}
+
 	.single-image-projects {
 		max-width: 80%;
 	}
@@ -61,7 +69,8 @@ header h1 {
 	text-align: center;
 	color: white;
 	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
+	padding-top: 20px;
+	font-size: vh;
 }
 
 
@@ -210,12 +219,12 @@ nav ul li:hover {
 	color: white;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
- }
+}
 
- .footer a{
+.footer a {
 	text-decoration: none;
 	color: lightgreen;
- }
+}
 
 /***********CSS SEPERATE FOR ABOUT PAGE BELOW***********/
 
@@ -330,7 +339,7 @@ nav ul li:hover {
 	border-radius: 10px;
 }
 
-.playgame-button{
+.playgame-button {
 	text-align: center;
 	background: rgb(89, 106, 91);
 	padding: 5px;
@@ -342,7 +351,8 @@ nav ul li:hover {
 
 /*stretching link to make parent clickable for github-repo link*/
 
-.project-title a, .playgame-button a {
+.project-title a,
+.playgame-button a {
 	display: flex;
 	flex-grow: 1;
 	flex-shrink: 1;
@@ -354,7 +364,8 @@ nav ul li:hover {
 
 /*Hover effect for github-repo link*/
 
-.project-title:hover, .playgame-button:hover {
+.project-title:hover,
+.playgame-button:hover {
 	background-color: #939AA4;
 }
 
@@ -384,12 +395,15 @@ nav ul li:hover {
 	.show-on-large {
 		display: none !important;
 	}
+
 	.show-on-small {
 		display: block !important;
 	}
+
 	.start-menu {
 		max-width: 100%;
 	}
+
 	.animal-menu2 {
 		max-width: 100%;
 	}
@@ -399,6 +413,7 @@ nav ul li:hover {
 	.show-on-large {
 		display: block !important;
 	}
+
 	.show-on-small {
 		display: none !important;
 	}
